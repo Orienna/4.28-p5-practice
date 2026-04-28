@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>
+            Explore Orienna's HTML!
+        </title>
+    </head>
+    <body>
+        <div>
+            
+        </div>
+
+        <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        </video>
+
+        <h2>Select your favorite ice cream flavor, submit and see what others think!</h2>
+
+        <form action="https://www.willflyforfood.net/ice-cream-flavors/">
+        <label for="cars">Choose the best ice cream flavor:</label>
+        <select id="food" name="food">
+            <option value="mango">Mango</option>
+            <option value="matcha">Matcha</option>
+            <option value="mint chocolate">Mint chocolate</option>
+            <option value="strawberry">Strawberry</option>
+        </select>
+        <input type="submit">
+        </form>
+
+        <h2>My original created characters</h2>
+
+        <canvas id="myCanvas" width="300" height="140" style="border:1px solid grey"></canvas>
+
+        <script>
+        const c = document.getElementById("myCanvas");
+        const ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.moveTo(20, 20);
+        ctx.lineTo(50, 80);
+        ctx.lineTo(70, 55);
+        ctx.lineTo(90, 80);
+        ctx.lineTo(110, 20);
+
+        ctx.strokeStyle = "red";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(130, 20);
+        ctx.lineTo(130, 80);
+        ctx.lineTo(180, 80);
+        ctx.lineTo(180, 20);
+        ctx.lineTo(130, 20);
+
+        ctx.strokeStyle = "green";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(200, 20);
+        ctx.lineTo(230, 80);
+        ctx.lineTo(250, 55);
+        ctx.lineTo(270, 80);
+        ctx.lineTo(290, 20);
+
+        ctx.strokeStyle = "violet";
+        ctx.stroke();
+        </script> 
+        
+    </body>
+</html>
